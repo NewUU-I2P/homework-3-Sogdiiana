@@ -6,14 +6,14 @@ std::string problemSolution3(float height, char S) {
     if (S == 'M') {
        if (height < 1.70)
         {
-            result = "short";
+            result = "Short";
         }
-            else if (height >= 1.70 && height < 1.85)
+        if (height >= 1.70 && height < 1.85)
         {
-            result = "normal ";
+            result = "Normal";
         }
-            else if (height >= 1.85)
-        { result = "tall ";
+        if(height >= 1.85)
+        { result = "Tall";
 
         }
     }
@@ -21,15 +21,15 @@ std::string problemSolution3(float height, char S) {
     {
             if (height < 1.60)
         {
-            result = "short";
+            result = "Short";
         }
-            else if (height >= 1.60 && height < 1.75)
+        if(height >= 1.60 && height < 1.75)
         {
-            result = "normal ";
+            result = "Normal";
         }
-            else if (height >= 1.75)
+        if (height >= 1.75)
             {
-                result = "tall " ;
+                result = "Tall" ;
             }
     }
     return result;
