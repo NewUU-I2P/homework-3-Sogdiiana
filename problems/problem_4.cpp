@@ -3,20 +3,21 @@
 
 std::string problemSolution4(const std::string &macAddress) {
     // write your code here
-
+    string result;
     if (macAddress == "FF:FF:FF:FF:FF:FF")
     {
-        cout <<  "The MAC address type is broadcast." << endl;
+        result = "Broadcast";
     }
-    else if (Octet % 2 == 0)
+    else if (Octet[1] % 2 == 0)
     {
-        cout << "The MAC address type is unicast." << endl;
+        result = "Unicast";
     }
-    else if (Octet % 2 != 0)
+    else if (Octet[1] % 2 != 0)
     {
-        cout << "The MAC address type is multicast." << endl;
+        result = "Multicast";
     }
 
     // make use of control flow statements
     // return result;
+
 }

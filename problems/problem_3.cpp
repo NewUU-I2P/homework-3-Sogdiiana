@@ -4,33 +4,33 @@ std::string problemSolution3(float height, char S) {
     // write your code here
     string result;
     if (S == 'M') {
-        switch (height)
+       if (height < 1.70)
         {
-            case (height < 1.70):
-                result= "short";
-                break;
-            case (height >= 1.70 && height < 1.85):
-                result = "normal " ;
-                break;
-            case (height >= 1.85):
-                result = "tall ";
-                break;
+            result = "short";
+        }
+            else if (height >= 1.70 && height < 1.85)
+        {
+            result = "normal ";
+        }
+            else if (height >= 1.85)
+        { result = "tall ";
+
         }
     }
     else if (S == 'F')
     {
-        switch (height)
+            if (height < 1.60)
         {
-            case (height < 1.60):
-                result = "short" ;
-                break;
-            case (height >= 1.60 && height < 1.75):
-                result = "normal " ;
-                break;
-            case (height >= 1.75):
-                result = "tall " ;
-                break;
+            result = "short";
         }
+            else if (height >= 1.60 && height < 1.75)
+        {
+            result = "normal ";
+        }
+            else if (height >= 1.75)
+            {
+                result = "tall " ;
+            }
     }
     return result;
     // use return to return your result

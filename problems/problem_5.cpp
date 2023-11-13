@@ -3,20 +3,16 @@ float problemSolution5(float x, float y, char operation) {
    // write your code here
     switch (operation)
     {
-        case 'm':
-        case 'M':
+        case '*':
             result = x*y;
             break;
-        case 'a':
-        case 'A':
+        case '+':
             result = x+y;
             break;
-        case 'd':
-        case 'D':
+        case '/':
             result = x/y;
             break;
-        case 's':
-        case 'S':
+        case '-':
             result = x-y;
             break;
         default:

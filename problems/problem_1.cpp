@@ -1,27 +1,27 @@
 float problemSolution1(float consumed_water) {
     float cost;
     // write your code here
-    float water ;
 
-    if (water <= 30 )
+
+    if (consumed_water <= 30 )
     {
-        cost = 13 + water*0.4;
-//        cout << "You should pay : " << cost << endl;
+        cost = 13 + consumed_water*0.4;
+
     }
-    else if (water <= 50 )
+    else if (consumed_water <= 50 )
     {
-        cost = 13 + 30*0.4 + (water-30)*0.12;
-//        cout << "You should pay : " << cost << endl;
+        cost = 13 + 30*0.4 + (consumed_water-30)*0.12;
+
     }
-    else if (water <= 60 )
+    else if (consumed_water <= 60 )
     {
-        cost = 13 + 30*0.4 + 20*0.12 +(water-50)*1.4;
-//        cout << "You should pay : " << cost << endl;
+        cost = 13 + 30*0.4 + 20*0.12 +(consumed_water-50)*1.4;
+
     }
     else
     {
-        cost = 13 + 30*0.4 + 20*0.12 + 10*1.4 + (water-60)*1.5;
-//        cout << "You should pay : " << cost << endl;
+        cost = 13 + 30*0.4 + 20*0.12 + 10*1.4 + (consumed_water-60)*1.5;
+
     }
 
 

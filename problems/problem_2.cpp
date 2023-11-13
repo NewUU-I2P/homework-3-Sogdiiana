@@ -15,7 +15,7 @@ float problemSolution2(float i, float j, float k) {
     }
     else
     {
-        cout << "numbers are equal";
+       result = 0;
     }
     return result;
 }
