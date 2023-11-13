@@ -3,15 +3,15 @@ float problemSolution2(float i, float j, float k) {
     // write your code here;
     if(i>j && i>k)
     {
-        cout << i;
+        result = i;
     }
     else if(j>i && j>k)
     {
-        cout << j;
+        result = j;
     }
    else if(k>j && k>i)
     {
-        cout << k;
+        result = k;
     }
     else
     {

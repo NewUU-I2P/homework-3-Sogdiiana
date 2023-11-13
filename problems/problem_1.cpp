@@ -1,4 +1,4 @@
-float problemSolution1(float consumed_water) {
+void problemSolution1(float consumed_water) {
     float cost;
     // write your code here
     float water ;
@@ -25,5 +25,5 @@ float problemSolution1(float consumed_water) {
     }
 
 
-    return cost;
+
 }
